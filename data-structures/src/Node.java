@@ -1,26 +1,26 @@
-public class Node {
+public class Node<T> {
 
-    private String content;
-    private Node next;
+    private T content;
+    private Node<T> next;
 
-    public Node(String content) {
+    public Node(T content) {
         this.content = content;
         this.next = null;
     }
 
-    public String getContent() {
+    public T getContent() {
         return content;
     }
 
-    public void setContent(String content) {
+    public void setContent(T content) {
         this.content = content;
     }
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Node<T> next) {
         this.next = next;
     }
 
