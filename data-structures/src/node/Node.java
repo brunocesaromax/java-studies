@@ -1,3 +1,5 @@
+package node;
+
 public class Node<T> {
 
     private T content;
@@ -26,7 +28,7 @@ public class Node<T> {
 
     @Override
     public String toString() {
-        return "Node{" +
+        return "node.Node{" +
                "content='" + content + '\'' +
                '}';
     }
