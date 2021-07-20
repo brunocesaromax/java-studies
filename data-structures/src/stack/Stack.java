@@ -32,4 +32,21 @@ public class Stack<T> {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder("----------------\n");
+        result.append("     Stack\n");
+        result.append("----------------\n");
+
+        Node<T> temp = firstNode;
+
+        while (temp != null) {
+            result.append(temp.toString()).append("\n");
+            temp = temp.getNext();
+        }
+
+        result.append("=================\n");
+        return result.toString();
+    }
 }

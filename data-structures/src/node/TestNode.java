@@ -1,4 +1,4 @@
-import node.Node;
+package node;
 
 public class TestNode {
 
