@@ -15,7 +15,16 @@ public class Queue<T> {
     }
 
     public Node<T> first() {
-        if (!isEmpty()){
+        return findFirstNode();
+    }
+
+    public T firstContent() {
+        Node<T> firstNode = findFirstNode();
+        return firstNode != null ? firstNode.getContent() : null;
+    }
+
+    private Node<T> findFirstNode() {
+        if (!isEmpty()) {
             Node<T> firstNode = this.firstNode;
 
             while (firstNode.getNext() != null) {
@@ -27,13 +36,28 @@ public class Queue<T> {
         return null;
     }
 
-    public void enqueue(Node<T> newNode) {
+    public void enqueueNode(Node<T> newNode) {
         newNode.setNext(firstNode);
         firstNode = newNode;
     }
 
-    public Node<T> dequeue() {
-        if (!isEmpty()){
+    public void enqueueContent(T obj) {
+        Node<T> newNode = new Node<>(obj);
+        newNode.setNext(firstNode);
+        firstNode = newNode;
+    }
+
+    public Node<T> dequeueNode() {
+        return findNodeToRemove();
+    }
+
+    public T dequeueContent() {
+        Node<T> nodeToRemove = findNodeToRemove();
+        return nodeToRemove != null ? nodeToRemove.getContent() : null;
+    }
+
+    private Node<T> findNodeToRemove() {
+        if (!isEmpty()) {
             Node<T> firstNode = this.firstNode;
             Node<T> tempNode = this.firstNode;
 
