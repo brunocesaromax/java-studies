@@ -18,11 +18,30 @@ public class LinkedList<T> {
         long listSize = 0;
         Node<T> temp = firstNode;
 
-        while (temp != null){
+        while (temp != null) {
             listSize++;
             temp = temp.getNext();
         }
 
         return listSize;
+    }
+
+    public void add(T content) {
+        Node<T> newNode = new Node<>(content);
+        add(newNode);
+    }
+
+    public void add(Node<T> newNode) {
+        if (this.isEmpty()) {
+            firstNode = newNode;
+        } else {
+            Node<T> temp = firstNode;
+
+            while (temp.getNext() != null){
+                temp = temp.getNext();
+            }
+
+            temp.setNext(newNode);
+        }
     }
 }
