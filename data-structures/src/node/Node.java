@@ -5,9 +5,18 @@ public class Node<T> {
     private T content;
     private Node<T> next;
 
+    public Node() {
+        this.next = null;
+    }
+
     public Node(T content) {
         this.content = content;
         this.next = null;
+    }
+
+    public Node(T content, Node<T> next) {
+        this.content = content;
+        this.next = next;
     }
 
     public T getContent() {

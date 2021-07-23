@@ -1,4 +1,4 @@
-package queue.stack;
+package queue;
 
 import node.Node;
 
