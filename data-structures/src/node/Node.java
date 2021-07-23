@@ -1,5 +1,7 @@
 package node;
 
+import java.util.Objects;
+
 public class Node<T> {
 
     private T content;
@@ -40,5 +42,18 @@ public class Node<T> {
         return "node.Node{" +
                "content='" + content + '\'' +
                '}';
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Node<?> node = (Node<?>) object;
+        return Objects.equals(content, node.content);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(content);
     }
 }
