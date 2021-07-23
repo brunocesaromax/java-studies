@@ -37,11 +37,50 @@ public class LinkedList<T> {
         } else {
             Node<T> temp = firstNode;
 
-            while (temp.getNext() != null){
+            while (temp.getNext() != null) {
                 temp = temp.getNext();
             }
 
             temp.setNext(newNode);
         }
     }
+
+    private Node<T> getNode(int index) {
+        checkIfIndexIsValid(index);
+
+        Node<T> temp = firstNode;
+        Node<T> nodeReturn = null;
+
+        for (int i = 0; i < size() - 1; i++) {
+            nodeReturn = temp;
+            temp = temp.getNext();
+        }
+
+        return nodeReturn;
+    }
+
+    private void checkIfIndexIsValid(int index) {
+        if (index >= size()) {
+            throw new IndexOutOfBoundsException("Não existe conteúdo no indice: " + index + " na lista. Indice máximo: " + (size() - 1));
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
