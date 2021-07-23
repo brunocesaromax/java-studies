@@ -45,6 +45,10 @@ public class LinkedList<T> {
         }
     }
 
+    public T getContent(int index) {
+        return getNode(index).getContent();
+    }
+
     private Node<T> getNode(int index) {
         checkIfIndexIsValid(index);
 
