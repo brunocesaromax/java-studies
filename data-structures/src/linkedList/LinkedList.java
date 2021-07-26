@@ -55,7 +55,7 @@ public class LinkedList<T> {
         Node<T> temp = firstNode;
         Node<T> nodeReturn = null;
 
-        for (int i = 0; i < size() - 1; i++) {
+        for (int i = 0; i <= index; i++) {
             nodeReturn = temp;
             temp = temp.getNext();
         }
