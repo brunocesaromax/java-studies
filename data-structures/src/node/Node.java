@@ -6,6 +6,7 @@ public class Node<T> {
 
     private T content;
     private Node<T> next;
+    private Node<T> before;
 
     public Node() {
         this.next = null;
@@ -35,6 +36,14 @@ public class Node<T> {
 
     public void setNext(Node<T> next) {
         this.next = next;
+    }
+
+    public Node<T> getBefore() {
+        return before;
+    }
+
+    public void setBefore(Node<T> before) {
+        this.before = before;
     }
 
     @Override
