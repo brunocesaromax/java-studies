@@ -94,13 +94,20 @@ public class LinkedList<T> {
 
         return nodeToRemove.getContent();
     }
+
+    @Override
+    public String toString() {
+        StringBuilder strReturn = new StringBuilder();
+        Node<T> temp = firstNode;
+
+        while (temp != null){
+            strReturn.append("Node{conteudo = ").append(temp.getContent()).append(" }\n");
+            temp = temp.getNext();
+        }
+
+        return strReturn.toString();
+    }
 }
-
-
-
-
-
-
 
 
 
