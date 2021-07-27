@@ -21,6 +21,28 @@ public class DoublyLinkedList<T> {
         return this.getNode(index).getContent();
     }
 
+    /*Adicionando no final da lista*/
+    public void add(T element){
+        Node<T> newNode = new Node<>(element);
+        add(newNode);
+    }
+
+    public void add(Node<T> newNode){
+        newNode.setNext(null);
+        newNode.setPrev(lastNode);
+
+        if (firstNode == null) {
+            firstNode = newNode;
+        }
+
+        if (lastNode != null) {
+            lastNode.setNext(newNode);
+        }
+
+        lastNode = newNode;
+        size++;
+    }
+
     private Node<T> getNode(int index) {
         checkIfIndexIsValid(index);
         Node<T> temp = firstNode;
