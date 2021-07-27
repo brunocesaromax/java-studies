@@ -22,12 +22,35 @@ public class DoublyLinkedList<T> {
     }
 
     /*Adicionando no final da lista*/
-    public void add(T element){
+    public void add(T element) {
         Node<T> newNode = new Node<>(element);
         add(newNode);
     }
 
-    public void add(Node<T> newNode){
+    /*Adicionando em determinada posição da lista*/
+    public void add(int index, T element) {
+        Node<T> temp = getNode(index);
+        Node<T> newNode = new Node<>(element);
+        newNode.setNext(temp);
+
+        if (newNode.getNext() != null) {
+            newNode.setPrev(temp.getPrev());
+            newNode.getNext().setPrev(newNode);
+        } else {
+            newNode.setPrev(lastNode);
+            lastNode = newNode;
+        }
+
+        if (index == 0) {
+            firstNode = newNode;
+        } else{
+            newNode.getPrev().setNext(newNode);
+        }
+
+        size++;
+    }
+
+    public void add(Node<T> newNode) {
         newNode.setNext(null);
         newNode.setPrev(lastNode);
 
@@ -44,7 +67,6 @@ public class DoublyLinkedList<T> {
     }
 
     private Node<T> getNode(int index) {
-        checkIfIndexIsValid(index);
         Node<T> temp = firstNode;
 
         for (int i = 0; (i < index) && (temp != null); i++) {
@@ -52,11 +74,5 @@ public class DoublyLinkedList<T> {
         }
 
         return temp;
-    }
-
-    private void checkIfIndexIsValid(int index) {
-        if (index >= size) {
-            throw new IndexOutOfBoundsException("Não existe conteúdo no indice: " + index + " na lista. Indice máximo: " + (size - 1));
-        }
     }
 }
