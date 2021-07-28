@@ -43,7 +43,7 @@ public class DoublyLinkedList<T> {
 
         if (index == 0) {
             firstNode = newNode;
-        } else{
+        } else {
             newNode.getPrev().setNext(newNode);
         }
 
@@ -66,6 +66,50 @@ public class DoublyLinkedList<T> {
         size++;
     }
 
+    public void remove(Node<T> node) {
+        int index = getIndexByNode(node);
+        remove(index);
+    }
+
+    public void remove(int index) {
+        if (index == 0) {
+            removeFirstNode();
+        } else {
+            Node<T> temp = getNode(index);
+            temp.getPrev().setNext(temp.getNext());
+
+            if (temp != lastNode) {
+                temp.getNext().setPrev(temp.getPrev());
+            } else {
+                lastNode = temp;
+            }
+        }
+
+        this.size--;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder strReturn = new StringBuilder();
+
+        Node<T> temp = firstNode;
+        for (int i = 0; i < size; i++) {
+            strReturn.append(temp.toString()).append("-->");
+            temp = temp.getNext();
+        }
+
+        strReturn.append("null");
+        return strReturn.toString();
+    }
+
+    private void removeFirstNode() {
+        firstNode = firstNode.getNext();
+
+        if (firstNode != null) {
+            firstNode.setPrev(null);
+        }
+    }
+
     private Node<T> getNode(int index) {
         Node<T> temp = firstNode;
 
@@ -74,5 +118,13 @@ public class DoublyLinkedList<T> {
         }
 
         return temp;
+    }
+
+    private Integer getIndexByNode(Node<T> node) {
+        for (int i = 0; i < size - 1; i++) {
+            if (node.equals(getNode(i))) return i;
+        }
+
+        throw new RuntimeException("Não existe indice correspondente na lista para o nó atual");
     }
 }
