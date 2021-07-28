@@ -48,7 +48,7 @@ public class Node<T> {
 
     @Override
     public String toString() {
-        return "node.Node{" +
+        return "Node{" +
                "content='" + content + '\'' +
                '}';
     }

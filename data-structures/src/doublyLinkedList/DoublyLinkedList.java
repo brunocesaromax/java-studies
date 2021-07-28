@@ -31,6 +31,11 @@ public class DoublyLinkedList<T> {
     public void add(int index, T element) {
         Node<T> temp = getNode(index);
         Node<T> newNode = new Node<>(element);
+        add(index, newNode);
+    }
+
+    public void add(int index, Node<T> newNode) {
+        Node<T> temp = getNode(index);
         newNode.setNext(temp);
 
         if (newNode.getNext() != null) {
@@ -72,6 +77,8 @@ public class DoublyLinkedList<T> {
     }
 
     public void remove(int index) {
+        checkIfIndexIsValid(index);
+
         if (index == 0) {
             removeFirstNode();
         } else {
@@ -100,6 +107,12 @@ public class DoublyLinkedList<T> {
 
         strReturn.append("null");
         return strReturn.toString();
+    }
+
+    private void checkIfIndexIsValid(int index) {
+        if (index >= size) {
+            throw new IndexOutOfBoundsException("Não existe conteúdo no indice: " + index + " na lista. Indice máximo: " + (size - 1));
+        }
     }
 
     private void removeFirstNode() {
