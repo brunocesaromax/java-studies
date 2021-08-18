@@ -17,7 +17,7 @@ Projeto contendo 4 aplicações:
   
 ## **Ambiente de Desenvolvimento**
 
-1 - Java 8  
+1 - Java 11  
 2 - Git
 
 ## **Executar a aplicação via IDE**
