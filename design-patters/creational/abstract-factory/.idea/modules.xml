@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/abstract-factory.iml" filepath="$PROJECT_DIR$/.idea/abstract-factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coupled-payment/coupled-payment.iml" filepath="$PROJECT_DIR$/coupled-payment/coupled-payment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pagseguro-payment.iml" filepath="$PROJECT_DIR$/pagseguro-payment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-abstract-factory/payment-abstract-factory.iml" filepath="$PROJECT_DIR$/payment-abstract-factory/payment-abstract-factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-library-abstract-factory/payment-library-abstract-factory.iml" filepath="$PROJECT_DIR$/payment-library-abstract-factory/payment-library-abstract-factory.iml" />
+    </modules>
+  </component>
+</project>

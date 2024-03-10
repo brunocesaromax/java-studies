@@ -1,0 +1,18 @@
+10/09/2023 01:00:57
+Saldo inicial da conta: R$ 1.000,00
+10/09/2023 01:00:57
+Novo saldo da conta após movimentação: R$ 1.500,00
+10/09/2023 01:00:57
+Novo saldo da conta após movimentação: R$ 1.300,00
+10/09/2023 01:07:24
+Saldo inicial da conta: R$ 1.000,00
+10/09/2023 01:07:24
+Novo saldo da conta após movimentação: R$ 1.500,00
+10/09/2023 01:07:24
+Novo saldo da conta após movimentação: R$ 1.300,00
+10/09/2023 01:07:28
+Saldo inicial da conta: R$ 1.000,00
+10/09/2023 01:07:28
+Novo saldo da conta após movimentação: R$ 1.500,00
+10/09/2023 01:07:28
+Novo saldo da conta após movimentação: R$ 1.300,00

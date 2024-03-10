@@ -1,0 +1,10 @@
+Sistema
+
+Idéia do sistema:
+
+- Criar biblioteca de envio de emails, uma mala direta
+
+Requisitos:
+
+1 - Deve receber os contatos (nome e e-mail) de qualquer fonte de dados
+2 - Deve ser capaz de adicionar novas fontes de dados de forma customizável

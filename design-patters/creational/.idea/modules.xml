@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/abstract-factory/coupled-payment/coupled-payment.iml" filepath="$PROJECT_DIR$/abstract-factory/coupled-payment/coupled-payment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/creational.iml" filepath="$PROJECT_DIR$/.idea/creational.iml" />
+      <module fileurl="file://$PROJECT_DIR$/factory/direct-email-factory-client/direct-email-factory-client.iml" filepath="$PROJECT_DIR$/factory/direct-email-factory-client/direct-email-factory-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/factory/direct-email-factory-lib/direct-email-factory-lib.iml" filepath="$PROJECT_DIR$/factory/direct-email-factory-lib/direct-email-factory-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/factory/direct-email/directemail.iml" filepath="$PROJECT_DIR$/factory/direct-email/directemail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/builder/issue-invoice/issue-invoice.iml" filepath="$PROJECT_DIR$/builder/issue-invoice/issue-invoice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/builder/sale-order/sale-order.iml" filepath="$PROJECT_DIR$/builder/sale-order/sale-order.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+
+@
+java:S2140"*Use "java.util.Random.nextLong()" instead.(Îº€é
+E	java:S106"+Replace this use of System.out by a logger.(ûèû¡ûÿÿÿÿ

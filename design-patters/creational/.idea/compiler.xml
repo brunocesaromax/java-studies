@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="directemail" />
+        <module name="sale-order" />
+        <module name="issue-invoice" />
+        <module name="coupled-payment" />
+        <module name="direct-email-factory-client" />
+        <module name="direct-email-factory-lib" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coupled-payment" target="17" />
+      <module name="direct-email-factory-client" target="17" />
+      <module name="direct-email-factory-lib" target="17" />
+      <module name="directemail" target="17" />
+      <module name="issue-invoice" target="17" />
+      <module name="sale-order" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

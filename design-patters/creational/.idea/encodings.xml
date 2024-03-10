@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/abstract-factory/coupled-payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/abstract-factory/coupled-payment/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/builder/issue-invoice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/builder/issue-invoice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/builder/sale-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/builder/sale-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/direct-email-factory-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/direct-email-factory-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/direct-email-factory-lib/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/direct-email-factory-lib/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/direct-email/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/factory/direct-email/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
