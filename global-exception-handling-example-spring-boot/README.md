@@ -33,9 +33,6 @@ Pré-requisitos: Java 11
   3 - Importar a coleção de requisições no postman:   
     - Caminho da coleção: /src/main/resources/static/postman-requests/Global Handling Errors.postman_collection.json   
     - Para importação do arquivo Global Handling Errors.postman_collection.json no Postman, seguir o seguinte tutorial: [Postman instructions for Importing and Exporting](https://kb.datamotion.com/?ht_kb=postman-instructions-for-exporting-and-importing)   
-    
-    
-   ![Img 1](https://github.com/brunocesaromax/global-exception-handling-example-spring-boot/blob/master/src/main/resources/static/images/global-handler-img1.png)
    
   4 - Executar as requisições uma a uma e analisar o tratamento de erro obtido como resposta 
   
