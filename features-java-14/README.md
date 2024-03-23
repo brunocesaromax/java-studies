@@ -8,19 +8,6 @@ A aplicação consiste na busca e criação de produtos.
 O principal objetivo do projeto é servir de base para projetos futuros que irão utilizar o Java 14.   
 Referência utilizada para desenvolvimento do projeto: [Java 14 com Spring na prática com Loiane Groner | 💻 Zup Open Talks 🚀](https://www.youtube.com/watch?v=imlGrTZmDKo) 
 
-## Imagens web
-
-![Img 1](https://github.com/brunocesaromax/features-java-14/blob/master/src/main/resources/static/images/img1.png)
-
-## Modelo conceitual
-
-![Modelo conceitual](https://github.com/brunocesaromax/features-java-14/blob/master/src/main/resources/static/images/class-diagram.png)
-
-## Modelo de banco de dados
-
-![Modelo bd](https://github.com/brunocesaromax/features-java-14/blob/master/src/main/resources/static/images/entity-diagram.png)
-
-
 ## Tecnologias utilizadas
 
 - Java 16
