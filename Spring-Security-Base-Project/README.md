@@ -7,12 +7,6 @@ Projeto contendo diferentes formas de configurar a segurança de uma aplicação
 O principal objetivo do projeto é servir de base para projetos futuros que iram utilizar o Spring Security como forma de segurança na aplicação.    
 Referência: [Protegendo sua aplicação Java com Spring Security - Congresso de TI](https://www.youtube.com/watch?v=FOX0r52_hwE&t=3327s).
 
-## Imagens web
-
-![Img 1](https://github.com/brunocesaromax/Spring-Security-Base-Project/blob/master/src/main/resources/static/images/spring-security-img1.png)   
-![Img 1](https://github.com/brunocesaromax/Spring-Security-Base-Project/blob/master/src/main/resources/static/images/spring-security-img2.png)   
-![Img 1](https://github.com/brunocesaromax/Spring-Security-Base-Project/blob/master/src/main/resources/static/images/spring-security-img3.png)
-
 ## Tecnologias utilizadas
 
 - Java 8
