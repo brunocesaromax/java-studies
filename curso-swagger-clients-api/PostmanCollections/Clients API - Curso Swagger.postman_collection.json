@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "ecfd87de-d4cb-46a8-83d3-2917008f7584",
+		"name": "Clients API - Curso Swagger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find All",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/clients-api/v1/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients-api",
+						"v1",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Marquesa\",\n        \"lastName\": \"Bandeira\",\n        \"initials\": \"MB\",\n        \"birthDate\": \"1996-03-12\",\n        \"type\": \"INTERN\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients-api/v1/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients-api",
+						"v1",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Maven\",\n        \"lastName\": \"Shura\",\n        \"initials\": \"MS\",\n        \"birthDate\": \"1995-11-21\",\n        \"type\": \"EXTERN\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients-api/v1/clients/184",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients-api",
+						"v1",
+						"clients",
+						"184"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/clients-api/v1/clients/125",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients-api",
+						"v1",
+						"clients",
+						"125"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/clients-api/v1/clients/find?lastName=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients-api",
+						"v1",
+						"clients",
+						"find"
+					],
+					"query": [
+						{
+							"key": "lastName",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/clients-api/v1/clients/125",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients-api",
+						"v1",
+						"clients",
+						"125"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update status",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/clients-api/v1/clients/125/status/active",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients-api",
+						"v1",
+						"clients",
+						"125",
+						"status",
+						"active"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "README",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/clients-api/v1/readme",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients-api",
+						"v1",
+						"readme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API DOCS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api-docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
