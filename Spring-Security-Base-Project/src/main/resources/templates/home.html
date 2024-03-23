@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Home</h1>
+
+<div>
+    <h1><span sec:authentication="principal.name"></span>, Bem vindo ao sistema!</h1>
+</div>
+
+<ul>
+    <li sec:authorize="hasRole('LIST_USERS')"><a href="/users">Lista de usuários</a></li>
+    <li sec:authorize="hasRole('LIST_PRODUCTS')"><a href="/products">Lista de produtos</a></li>
+    <li sec:authorize="hasRole('LIST_COLORS')"><a href="/colors">Lista de cores</a></li>
+</ul>
+
+<form th:action="@{/logout}" th:method="POST" autocomplete="off">
+    <input name="submit" type="submit" value="logout"/>
+</form>
+
+</body>
+</html>
