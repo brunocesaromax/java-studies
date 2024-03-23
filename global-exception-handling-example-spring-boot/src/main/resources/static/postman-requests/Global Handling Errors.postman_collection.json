@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "c9f5320b-680c-4301-8efb-8968b9503be3",
+		"name": "Global Handling Errors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "handleMethodArgumentNotValid",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain;charset=UTF-8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Arroz\",\n    \"code\": \"11\",\n    \"value\": 0,\n    \"quantity\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{env}}/api/tests",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "handleHttpRequestMethodNotSupported",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain;charset=UTF-8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Arroz\",\n    \"code\": \"11\",\n    \"value\": 0,\n    \"quantity\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{env}}/api/tests",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "handleHttpMediaTypeNotSupported",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain;charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Arroz\",\n    \"code\": \"11\",\n    \"value\": 0,\n    \"quantity\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{env}}/api/tests",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "handleMissingServletRequestParameter",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain;charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/tests/pagination",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tests",
+						"pagination"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "handleMethodArgumentTypeMismatch",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain;charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/tests/pagination?term=12&page=example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tests",
+						"pagination"
+					],
+					"query": [
+						{
+							"key": "term",
+							"value": "12"
+						},
+						{
+							"key": "page",
+							"value": "example"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "handleNoHandlerFoundException",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain;charset=UTF-8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/tests/not-exists/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tests",
+						"not-exists",
+						"18"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
