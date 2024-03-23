@@ -7,14 +7,6 @@ Aplicação usando os frameworks Spring Boot + Swagger.
 A aplicação consiste em um CRUD simples para clientes.   
 O principal objetivo do projeto é servir de base para projetos futuros que poderão ser gerados por um arquivo .yml através do site: https://editor.swagger.io/
 
-## Layout Web
-
-![Img 1](https://github.com/brunocesaromax/curso-swagger-clients-api/blob/master/src/main/resources/static/images/swagger-img1.png)
-
-## Modelo Conceitual
-
-![Modelo Conceitual](https://github.com/brunocesaromax/curso-swagger-clients-api/blob/master/src/main/resources/static/images/class-diagram.png)
-
 ## Tecnologias utilizadas
 - Java 11
 - Spring Boot 2.6.3
